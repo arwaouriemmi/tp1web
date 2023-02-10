@@ -36,4 +36,5 @@ export class ClientEntity {
   })
   @Optional()
   favoris: ProduitEntity[];
+  
 }

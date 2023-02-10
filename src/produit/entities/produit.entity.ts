@@ -13,6 +13,9 @@ export class ProduitEntity {
   description: string;
   @Column()
   prix: number;
+  @Column()
+  stock: number;
   @ManyToOne((type) => CommerçantEntity, (commerçant) => commerçant.produits)
   commerçant: CommerçantEntity;
+  
 }
